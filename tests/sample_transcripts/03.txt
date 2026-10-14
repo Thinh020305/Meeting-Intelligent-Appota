@@ -1,0 +1,3 @@
+seg_001 Nam: Tôi đề xuất dùng Stripe.
+seg_002 Minh: PayOS cũng là một lựa chọn.
+seg_003 PM: Để mai quyết định.

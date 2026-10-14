@@ -1,0 +1,1 @@
+seg_001 Nam: Nếu traffic tăng mạnh khi launch thì server có thể quá tải.

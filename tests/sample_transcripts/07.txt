@@ -1,0 +1,2 @@
+seg_001 PM: Nam deploy production hôm nay nhé.
+seg_002 Nam: API đang lỗi nên hiện tại em chưa deploy được.

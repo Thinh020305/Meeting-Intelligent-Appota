@@ -1,2 +1,0 @@
-seg_001 Nam: Login API đang lỗi.
-seg_002 Nam: Login API đã fix xong rồi.

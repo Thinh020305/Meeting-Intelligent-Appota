@@ -1,6 +1,5 @@
 import copy
 import json
-from pathlib import Path
 
 import httpx
 import pytest
@@ -14,9 +13,7 @@ from tests.sample_transcripts.cases import CASES
 
 @pytest.fixture(params=CASES, ids=lambda c: f"spec_{c['id']}")
 def spec_case(request):
-    case = copy.deepcopy(request.param)
-    case["transcript"] = (Path(__file__).parent / "sample_transcripts" / f"{case['id']}.txt").read_text(encoding="utf-8")
-    return case
+    return copy.deepcopy(request.param)
 
 
 @pytest.fixture

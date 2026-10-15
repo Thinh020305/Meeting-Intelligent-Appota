@@ -1,1 +1,12 @@
-seg_001 PM: Chốt dùng phương án A.
+An: Hôm nay chúng ta thống nhất phạm vi phát triển ứng dụng quản lý công việc cho phiên bản MVP.
+Bình: Tôi đề xuất sử dụng PostgreSQL để lưu dữ liệu vì hệ thống cần quản lý quan hệ giữa người dùng và công việc.
+An: Tôi đồng ý. Chốt PostgreSQL làm cơ sở dữ liệu cho MVP.
+Chi: Tôi nhận thiết kế database schema và sẽ hoàn thành trước ngày 20/10/2026.
+An: Bình phụ trách triển khai API đăng nhập, hoàn thành trước ngày 22/10/2026 nhé.
+Bình: Tôi xác nhận.
+Chi: Hiện tại API đăng nhập chưa có môi trường kiểm thử.
+Bình: Đúng vậy, thiếu môi trường kiểm thử đang khiến tôi không thể thực hiện kiểm thử tích hợp.
+An: Tôi sẽ cấu hình môi trường kiểm thử trước ngày 17/10/2026.
+Chi: Tôi cũng muốn hệ thống hỗ trợ lọc danh sách công việc theo trạng thái.
+An: Đồng ý bổ sung yêu cầu đó vào phạm vi MVP.
+Bình: Tôi đánh giá giao diện hiện tại dễ sử dụng, nhưng phần điều hướng giữa các trang còn chưa trực quan.

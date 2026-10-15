@@ -1,2 +1,29 @@
-seg_001 PM: Nam deploy production hôm nay nhé.
-seg_002 Nam: API đang lỗi nên hiện tại em chưa deploy được.
+An: Hôm nay chúng ta đánh giá bản MVP của Meeting Intelligence trước buổi demo.
+Bình: Hiện tại hệ thống đã có chức năng nhập transcript và phân tích bằng LLM.
+Chi: Tôi đã thử với một cuộc họp khoảng 5.000 từ. Hệ thống trích xuất khá tốt Decision và Tasks, nhưng đôi khi nhầm Risks thành Problems.
+An: Vậy cần cải thiện khả năng phân loại.
+Bình: Tôi đề xuất thêm một bước validation bằng LLM thứ hai.
+Chi: Nhưng việc đó có thể làm tăng thời gian xử lý và chi phí API.
+An: Đúng. Chưa triển khai validation lúc này. Chúng ta cần đánh giá chi phí trước.
+Bình: Ngoài ra, tôi đang dùng model A để phân tích transcript.
+Chi: Tôi nghĩ model B có thể cho kết quả tốt hơn với transcript dài.
+An: Chúng ta có số liệu so sánh chưa?
+Chi: Chưa. Tôi chỉ mới thử một vài trường hợp.
+An: Vậy tạm thời tiếp tục sử dụng model A cho MVP. Việc chuyển sang model B sẽ xem xét sau khi có benchmark.
+Bình: Tôi sẽ thực hiện benchmark giữa hai model trước ngày 20/10/2026.
+Chi: Hiện tại có một lỗi khác: khi transcript dài, frontend đôi lúc hiển thị timeout.
+An: Lỗi này đã xác định nguyên nhân chưa?
+Bình: Chưa. Có thể backend xử lý lâu hoặc request bị timeout ở proxy.
+An: Vậy Bình kiểm tra log backend và cấu hình timeout trước ngày 18/10/2026.
+Bình: Được.
+Chi: Tôi muốn bổ sung chức năng tải kết quả dưới dạng JSON.
+An: Chức năng đó phù hợp với MVP. Chốt bổ sung xuất JSON.
+Chi: Tôi sẽ triển khai chức năng này trước ngày 22/10/2026.
+Bình: Nhưng nếu kết quả JSON có dữ liệu nhạy cảm thì có nguy cơ bị lộ thông tin khi chia sẻ file.
+An: Đúng, cần lưu ý rủi ro này.
+Chi: Ngoài ra, tôi đã sửa lỗi hiển thị sai tên người nói từ hôm qua.
+An: Đã kiểm thử lại chưa?
+Chi: Rồi. Tôi đã kiểm tra lại với ba transcript và chưa thấy lỗi tái xuất hiện.
+An: Tốt, vậy không đưa lỗi đó vào danh sách vấn đề đang tồn tại.
+Bình: Còn tính năng nhận audio trực tiếp thì sao?
+An: Chưa quyết định. Hiện tại MVP vẫn sử dụng transcript đầu vào. Chúng ta xem xét audio ở giai đoạn sau.

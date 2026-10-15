@@ -1,2 +1,0 @@
-seg_001 Khách hàng phản hồi giao diện hiện tại khó sử dụng.
-seg_002 Khách hàng yêu cầu đổi giao diện trang thanh toán.

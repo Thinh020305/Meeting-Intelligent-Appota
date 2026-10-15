@@ -1,1 +1,17 @@
-seg_001 Nam: API login đang lỗi.
+An: Chúng ta cần chọn nền tảng triển khai backend cho Meeting Intelligence.
+Bình: Tôi đề xuất Render vì dễ triển khai, không phải cấu hình nhiều.
+Chi: Nhưng hôm trước tôi gặp tình trạng backend trên Render không phản hồi và frontend báo lỗi 502.
+An: Tôi cũng thấy Render không ổn định trong lần kiểm thử đó.
+Bình: Có thể do cấu hình port chưa đúng, chưa chắc lỗi từ Render.
+Chi: Tôi nghĩ nên chuyển sang Railway.
+An: Railway có ưu điểm gì?
+Chi: Theo tôi, Railway có thể thuận tiện hơn trong việc theo dõi deployment, nhưng chúng ta chưa thử thực tế.
+Bình: Tôi vẫn muốn giữ Render. Nếu sửa đúng cấu hình thì có thể hoạt động tốt.
+An: Vậy hiện tại có hai phương án là Render và Railway.
+Chi: Chúng ta có nên chọn Railway luôn không?
+An: Chưa. Tôi muốn kiểm thử cả hai trước khi ra quyết định.
+Bình: Tôi có thể kiểm tra lại cấu hình Render.
+Chi: Tôi có thể thử Railway nếu có thời gian.
+An: Được. Nhưng chưa cần phân công chính thức hôm nay.
+Bình: Vậy cuộc họp này chưa chốt nền tảng triển khai.
+An: Đúng. Quyết định sẽ được đưa ra sau khi có kết quả kiểm thử.

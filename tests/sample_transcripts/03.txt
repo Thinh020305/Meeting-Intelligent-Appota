@@ -1,3 +1,9 @@
-seg_001 Nam: Tôi đề xuất dùng Stripe.
-seg_002 Minh: PayOS cũng là một lựa chọn.
-seg_003 PM: Để mai quyết định.
+An: Tôi muốn hệ thống có thêm chức năng xuất kết quả phân tích cuộc họp thành file PDF.
+Bình: Tính năng này chắc nên làm sớm.
+Chi: Ai sẽ phụ trách?
+An: Có lẽ nhóm backend, nhưng chưa xác định người cụ thể.
+Bình: Tôi hiện đang làm API nên chưa chắc nhận thêm được.
+Chi: Tôi có thể hỗ trợ, nhưng phải xem tiến độ công việc hiện tại.
+An: Vậy chúng ta ghi nhận yêu cầu xuất PDF trước. Người thực hiện và thời hạn sẽ quyết định sau.
+Bình: Còn chức năng xuất Word thì sao?
+An: Chưa quyết định. Chúng ta cần kiểm tra nhu cầu trước.

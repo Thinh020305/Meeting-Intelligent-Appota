@@ -1,3 +1,9 @@
-seg_001 Nam: Tôi đề xuất dùng Stripe.
-seg_002 Minh: Tôi đề xuất dùng PayOS.
-seg_003 PM: Ok, chốt PayOS.
+An: Với hệ thống Meeting Intelligence, tôi đề xuất lưu kết quả phân tích vào MongoDB.
+Bình: MongoDB khá linh hoạt với dữ liệu JSON. Tôi ủng hộ.
+An: Vậy chúng ta tạm chốt MongoDB.
+Chi: Tôi thấy khó khăn là các bản ghi Decision, Tasks và Problems có thể liên quan đến nhau. PostgreSQL sẽ phù hợp hơn nếu cần truy vấn quan hệ.
+Bình: Đúng, tôi thay đổi ý kiến. Nên chuyển sang PostgreSQL.
+An: Vậy quyết định MongoDB lúc đầu không còn hiệu lực. Chốt sử dụng PostgreSQL.
+Chi: Tôi sẽ thiết kế schema PostgreSQL trước ngày 21/10/2026.
+Bình: Tuy nhiên, phần lưu trữ transcript gốc bằng database hay object storage thì vẫn chưa cần quyết định ngay.
+An: Đúng. Để vấn đề lưu transcript gốc sang cuộc họp tuần sau.

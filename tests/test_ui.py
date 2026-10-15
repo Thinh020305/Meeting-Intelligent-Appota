@@ -9,7 +9,7 @@ UI = Path(__file__).resolve().parents[1] / "ui" / "streamlit_app.py"
 
 
 def test_ui_submits_and_displays_evidence(monkeypatch):
-    sample = CASES[3]
+    sample = CASES[0]
     calls = []
 
     def post(url, **kwargs):
@@ -23,8 +23,8 @@ def test_ui_submits_and_displays_evidence(monkeypatch):
     app.button[0].click().run()
     assert not app.exception
     assert calls[0][1]["json"] == {"transcript": sample["transcript"]}
-    assert any("seg_001" in text.value and "Nam hoàn thành API" in text.value for text in app.text)
-    assert any("owner: Nam" in caption.value for caption in app.caption)
+    assert any("seg_004" in text.value and "Tôi nhận thiết kế database schema" in text.value for text in app.text)
+    assert any("owner: Chi" in caption.value for caption in app.caption)
     assert app.session_state.analysis[0] == sample["final"]
 
 

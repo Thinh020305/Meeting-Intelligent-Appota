@@ -10,7 +10,7 @@ from tests.sample_transcripts.cases import CASES
 @pytest.mark.parametrize("value", ["", " ", "unknown", "N/A", 3])
 @pytest.mark.parametrize("field", ["owner", "deadline"])
 def test_missing_task_metadata_must_be_null(field, value):
-    data = copy.deepcopy(CASES[4]["final"])
+    data = copy.deepcopy(CASES[6]["final"])
     data["tasks"][0][field] = value
     with pytest.raises(ValidationError):
         MeetingOutput.model_validate(data)
@@ -18,7 +18,7 @@ def test_missing_task_metadata_must_be_null(field, value):
 
 @pytest.mark.parametrize("field", ["requester", "target"])
 def test_request_nullable_fields_are_required(field):
-    data = copy.deepcopy(CASES[7]["final"])
+    data = copy.deepcopy(CASES[2]["final"])
     del data["requests"][0][field]
     with pytest.raises(ValidationError):
         MeetingOutput.model_validate(data)

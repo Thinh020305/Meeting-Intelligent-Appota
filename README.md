@@ -61,7 +61,7 @@ Transport/schema theo [Gemini GenerateContent API](https://ai.google.dev/api/gen
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-10 testcase gốc nằm trong `tests/sample_transcripts/01.txt` đến `10.txt`. `cases.py` chứa golden responses cho cả 3 bước. Các tests thông thường đi qua endpoint và `llm_client.py` thật với HTTP Gemini giả lập, kiểm tra truyền đầy đủ dữ liệu, prompt từ file, JSON schema, output và lỗi validation; thêm tests preprocessing, provider failures/retry và Streamlit UI.
+7 testcase nằm trong `tests/sample_transcripts/01.txt` đến `07.txt`. `cases.py` đọc trực tiếp các transcript này và chứa golden responses tương ứng cho cả 3 bước. Các tests thông thường đi qua endpoint và `llm_client.py` thật với HTTP Gemini giả lập, kiểm tra truyền đầy đủ dữ liệu, prompt từ file, JSON schema, output và lỗi validation; thêm tests preprocessing, provider failures/retry và Streamlit UI.
 
 Mock tests kiểm tra tích hợp và contracts, không chứng minh Gemini hiểu đúng cả 10 transcript. Bộ live tests kiểm tra Gemini thật theo category/state/owner/deadline và các quan hệ ACCEPTS, BLOCKS, RESOLVES; không đòi câu chữ summary giống hệt fixture:
 

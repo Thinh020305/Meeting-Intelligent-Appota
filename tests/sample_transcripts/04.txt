@@ -1,1 +1,8 @@
-seg_001 PM: Nam hoàn thành API trước thứ Sáu nhé.
+An: Hiện tại API phân tích transcript đang có lỗi timeout khi nhận dữ liệu dài.
+Bình: Tôi đã kiểm tra. Với transcript khoảng 30.000 từ, thời gian xử lý vượt quá timeout của server.
+Chi: Lỗi timeout này đang chặn việc kiểm thử các cuộc họp dài.
+An: Nếu chúng ta không tối ưu trước ngày demo, có nguy cơ hệ thống bị timeout ngay khi khách hàng thử một transcript dài.
+Bình: Tôi sẽ kiểm tra lại timeout configuration trước ngày 17/10/2026.
+Chi: Tôi đề xuất bổ sung xử lý bất đồng bộ để tránh request phải chờ quá lâu.
+An: Chúng ta chưa chốt giải pháp bất đồng bộ. Hãy đánh giá thêm tác động trước khi quyết định.
+Bình: Ngoài ra, nếu gọi LLM quá nhiều lần, chi phí API có thể tăng đáng kể khi số lượng người dùng lớn.
